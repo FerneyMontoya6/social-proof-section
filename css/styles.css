@@ -1,0 +1,122 @@
+:root {
+  /* Primary colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Neutral colors */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: 'League Spartan', sans-serif;
+  background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+  background-size: contain, contain;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 100%;
+  margin: 5rem auto;
+}
+
+.main-description {
+  text-align: center;
+}
+
+.main-description__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  color: var(--very-dark-magenta);
+}
+
+.main-description__paragraph {
+  margin: 2.5rem 0;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--dark-grayish-magenta);
+}
+
+.stars-rated {
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  width: 100%;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.star-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 33.5rem;
+  height: 7rem;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  background-color: var(--light-grayish-magenta);
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  border-radius: 0.8rem;
+}
+
+.star-card__stars--star-icon {
+  margin: 0 0.3rem;
+}
+
+.reviews {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(3fr, 3);
+}
+
+.review-card {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--very-dark-magenta);
+  color: white;
+  border-radius: 0.8rem;
+}
+
+.review-card__user-perfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.review-card__user-perfil img {
+  width: 4rem;
+  margin-right: 2rem;
+  border-radius: 50%;
+}
+
+.user-perfil__name {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.user-perfil__verify {
+  color: var(--soft-pink);
+}
+
+.review-card__description {
+  line-height: 2.3rem;
+}
